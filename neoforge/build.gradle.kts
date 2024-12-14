@@ -95,7 +95,6 @@ dependencies {
     })
 
     neoForge(libs.neoforge)
-    modImplementation(libs.architectury.neoforge)
     implementation(libs.kotlinforforge) {
         exclude(group = "net.neoforged.fancymodloader", module = "loader")
     }
