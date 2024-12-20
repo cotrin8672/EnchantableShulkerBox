@@ -17,6 +17,7 @@ dependencies {
     })
 
     modImplementation(libs.fabric.loader)
+    modApi(libs.clothConfig.fabric)
 }
 
 java {

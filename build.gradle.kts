@@ -22,4 +22,8 @@ java {
 allprojects {
     group = modGroupId
     version = modVersion
+
+    repositories {
+        maven("https://maven.shedaniel.me/")
+    }
 }
