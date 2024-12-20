@@ -8,6 +8,14 @@ architectury {
     common("neoforge", "fabric")
 }
 
+base {
+    val modId: String by project
+    val modVersion: String by project
+
+    archivesName = modId
+    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
+}
+
 @Suppress("UnstableApiUsage")
 dependencies {
     minecraft(libs.minecraft)
@@ -17,7 +25,7 @@ dependencies {
     })
 
     modImplementation(libs.fabric.loader)
-    modApi(libs.clothConfig.fabric)
+    modImplementation(libs.architectury)
 }
 
 java {

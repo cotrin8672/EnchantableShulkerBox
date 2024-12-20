@@ -33,25 +33,27 @@ publisher {
     versionType.set("release")
     changelog.set(file("../changelog.md"))
     version.set(modVersion)
-    displayName.set("$modName-${project.name}-$modVersion")
-    gameVersions.set(listOf(libs.versions.minecraft.get()))
+    displayName.set("ShulkerBoxUtility-${project.version}")
+    gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.FABRIC)
     setCurseEnvironment(CurseEnvironment.BOTH)
-    artifact.set("build/libs/$modId-${project.name}-$modVersion.jar")
+    artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
 
     curseDepends {
-        required("fabric-api", "fabric-language-kotlin")
+        required("fabric-api", "fabric-language-kotlin", "cloth-config")
     }
 
     modrinthDepends {
-        required("fabric-api", "fabric-language-kotlin")
+        required("fabric-api", "fabric-language-kotlin", "cloth-config")
     }
 }
 
 base {
     val modId: String by project
+    val modVersion: String by project
 
-    archivesName = "$modId-${project.name}"
+    archivesName = modId
+    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
 }
 
 configurations {
@@ -79,6 +81,7 @@ configurations {
 
 repositories {
     maven("https://maven.terraformersmc.com/")
+    maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
 }
 
 @Suppress("UnstableApiUsage")
@@ -92,8 +95,7 @@ dependencies {
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.kotlin)
-    modApi(libs.modmenu)
-    modApi(libs.clothConfig.fabric)
+    modImplementation(libs.architectury.fabric)
 
     "common"(project(path = ":common", configuration = "namedElements")) { isTransitive = false }
     "shadowBundle"(project(path = ":common", configuration = "transformProductionFabric"))

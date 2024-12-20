@@ -25,5 +25,6 @@ allprojects {
 
     repositories {
         maven("https://maven.shedaniel.me/")
+        maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
     }
 }

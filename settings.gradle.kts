@@ -8,7 +8,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "ShulkerBoxUtility"
+rootProject.name = "EnchantableShulkerBox"
 
 include(":common")
 include(":fabric")

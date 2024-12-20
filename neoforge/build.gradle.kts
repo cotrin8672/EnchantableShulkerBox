@@ -33,25 +33,27 @@ publisher {
     versionType.set("release")
     changelog.set(file("../changelog.md"))
     version.set(modVersion)
-    displayName.set("$modName-${project.name}-$modVersion")
-    gameVersions.set(listOf(libs.versions.minecraft.get()))
+    displayName.set("ShulkerBoxUtility-${project.version}")
+    gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.NEOFORGE)
     setCurseEnvironment(CurseEnvironment.BOTH)
-    artifact.set("build/libs/$modId-${project.name}-$modVersion.jar")
+    artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
 
     curseDepends {
-        required("kotlin-for-forge")
+        required("kotlin-for-forge", "cloth-config")
     }
 
     modrinthDepends {
-        required("kotlin-for-forge")
+        required("kotlin-for-forge", "cloth-config")
     }
 }
 
 base {
     val modId: String by project
+    val modVersion: String by project
 
-    archivesName = "$modId-neoforge"
+    archivesName = modId
+    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
 }
 
 configurations {
@@ -98,7 +100,7 @@ dependencies {
     implementation(libs.kotlinforforge) {
         exclude(group = "net.neoforged.fancymodloader", module = "loader")
     }
-    modApi(libs.clothConfig.neoforge)
+    modImplementation(libs.architectury.neoforge)
 
     "common"(project(path = ":common", configuration = "namedElements")) { isTransitive = false }
     "shadowBundle"(project(path = ":common", configuration = "transformProductionFabric"))
