@@ -25,6 +25,7 @@ base {
 }
 
 publisher {
+    val modId: String by project
     val modName: String by project
 
     apiKeys {
@@ -42,7 +43,7 @@ publisher {
     gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.FABRIC)
     setCurseEnvironment(CurseEnvironment.BOTH)
-    artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
+    artifact.set("build/libs/$modId-${project.version}.jar")
 
     curseDepends {
         required("fabric-api", "fabric-language-kotlin")
