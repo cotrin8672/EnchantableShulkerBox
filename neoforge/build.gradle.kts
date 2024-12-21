@@ -16,6 +16,14 @@ architectury {
     neoForge()
 }
 
+base {
+    val modId: String by project
+    val modVersion: String by project
+
+    archivesName = modId
+    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
+}
+
 publisher {
     val modName: String by project
 
@@ -43,14 +51,6 @@ publisher {
     modrinthDepends {
         required("kotlin-for-forge")
     }
-}
-
-base {
-    val modId: String by project
-    val modVersion: String by project
-
-    archivesName = modId
-    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
 }
 
 configurations {
