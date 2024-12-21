@@ -37,11 +37,11 @@ publisher {
     artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
 
     curseDepends {
-        required("kotlin-for-forge", "architectury")
+        required("kotlin-for-forge")
     }
 
     modrinthDepends {
-        required("kotlin-for-forge", "architectury")
+        required("kotlin-for-forge")
     }
 }
 

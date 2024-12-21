@@ -37,11 +37,11 @@ publisher {
     artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
 
     curseDepends {
-        required("fabric-api", "fabric-language-kotlin", "architectury")
+        required("fabric-api", "fabric-language-kotlin")
     }
 
     modrinthDepends {
-        required("fabric-api", "fabric-language-kotlin", "architectury")
+        required("fabric-api", "fabric-language-kotlin")
     }
 }
 
