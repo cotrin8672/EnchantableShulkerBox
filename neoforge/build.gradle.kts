@@ -26,9 +26,8 @@ publisher {
         modrinth(System.getenv("MODRINTH_API_KEY"))
     }
 
-    // TODO: set project id
-    curseID.set("")
-    modrinthID.set("")
+    curseID.set("1163015")
+    modrinthID.set("FrMKw3Rd")
 
     versionType.set("release")
     changelog.set(file("../changelog.md"))
