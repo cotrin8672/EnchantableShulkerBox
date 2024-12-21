@@ -4,16 +4,16 @@
 [Architectury Transformer DEBUG] ============================
 [Architectury Transformer DEBUG] 
 [Architectury Transformer DEBUG] Transforming 5 transformer(s) from C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\devlibs\enchantableshulkerbox-0.1.0-mc1.21-common-dev.jar to C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionFabric.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapMixinVariables@39e67dee
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@6616ecdd
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@48010feb
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapMixinVariables@3db2055a
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@74b405e2
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@5354f91d
 [Architectury Transformer DEBUG]  - AddRefmapName(enabled=() -> kotlin.Boolean)
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@4e6289de
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@6665808
 [Architectury Transformer DEBUG] Transforming from C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\devlibs\enchantableshulkerbox-0.1.0-mc1.21-common-dev.jar to C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionFabric.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Reading mixin mappings file: C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\loom-cache\mixin-map-loom.mappings.1_21.layered+hash.151725720-v2.main.tiny
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.shadowed.impl.dev.architectury.tinyremapper.TinyUtils$$Lambda/0x000002615b718000@36c5d4a7
-[Architectury Transformer DEBUG] Provided 61 classpath jar(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.shadowed.impl.dev.architectury.tinyremapper.TinyUtils$$Lambda/0x000001c3824f0000@22eca8a9
+[Architectury Transformer DEBUG] Provided 60 classpath jar(s):
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.0.21\618b539767b4899b4660a83006e052b63f1db551\kotlin-stdlib-2.0.21.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\dev.architectury\architectury-injectables\1.0.10\62db2a366d662606d1b23ad02ccc3212ed37ec3\architectury-injectables-1.0.10.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\net.fabricmc\fabric-loader\0.16.9\7eaa23079ac1569963e488054db124c7eb984f05\fabric-loader-0.16.9.jar
@@ -71,43 +71,39 @@
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.3\29589b5f87ed335a6c7e7ee6a5775f81f97ecb84\lwjgl-3.3.3.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.lz4\lz4-java\1.8.0\4b986a99445e49ea5fbf5d149c4b63f6ed6c6780\lz4-java-1.8.0.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.9\7cf2726fdcfbc8610f9a71fb3ed639871f315340\slf4j-api-2.0.9.jar
-[Architectury Transformer DEBUG]  - C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\.gradle\loom-cache\minecraftMaven\net\minecraft\minecraft-merged-5efea57e6f\1.21-loom.mappings.1_21.layered+hash.151725720-v2\minecraft-merged-5efea57e6f-1.21-loom.mappings.1_21.layered+hash.151725720-v2.jar
+[Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\fabric-loom\minecraftMaven\net\minecraft\minecraft-merged\1.21-loom.mappings.1_21.layered+hash.151725720-v2\minecraft-merged-1.21-loom.mappings.1_21.layered+hash.151725720-v2.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.97.Final\54188f271e388e7f313aea995e82f58ce2cdb809\netty-transport-native-epoll-4.1.97.Final-linux-x86_64.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.97.Final\5514744c588190ffda076b35a9b8c9f24946a960\netty-transport-native-epoll-4.1.97.Final-linux-aarch_64.jar
-[Architectury Transformer DEBUG]  - C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\.gradle\loom-cache\remapped_mods\loom_mappings_1_21_layered_hash_151725720_v2\dev\architectury\architectury\13.0.2\architectury-13.0.2.jar
-[Architectury Transformer] Read classpath in 1.943 s
+[Architectury Transformer] Read classpath in 1.811 s
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] Found class transformer
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/EnchantableShulkerBox with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/registry/ModTags with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/registry/ModEnchantments with maxs=true frames=true
+[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/registry/ModTags with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixinimpl/ItemStackMixinImpl with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/client/CustomRenderType with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/client/CustomRenderType$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixin/ShulkerBoxBlockEntityRendererMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixin/ItemMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixin/ItemStackMixin with maxs=true frames=true
-[Architectury Transformer DEBUG] Checking whether /enchantableshulkerbox.mixins.json is a mixin config.
+[Architectury Transformer DEBUG] Checking whether /enchantableshulkerbox-common.mixins.json is a mixin config.
 [Architectury Transformer DEBUG] Checking whether /enchantableshulkerbox-common-refmap.json is a mixin config.
-[Architectury Transformer DEBUG] Found mixin config(s): /enchantableshulkerbox.mixins.json
-[Architectury Transformer DEBUG] Injecting enchantableshulkerbox-common-refmap.json to /enchantableshulkerbox.mixins.json
+[Architectury Transformer DEBUG] Found mixin config(s): /enchantableshulkerbox-common.mixins.json
+[Architectury Transformer DEBUG] Injecting enchantableshulkerbox-common-refmap.json to /enchantableshulkerbox-common.mixins.json
 [Architectury Transformer DEBUG] Closed File Systems for C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionFabric.jar
-[Architectury Transformer] Transformed jar with 5 transformer(s) in 2.530 s
+[Architectury Transformer] Transformed jar with 5 transformer(s) in 2.362 s
 [Architectury Transformer DEBUG] 
 [Architectury Transformer DEBUG] ============================
 [Architectury Transformer DEBUG] Transforming from C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\devlibs\enchantableshulkerbox-0.1.0-mc1.21-common-dev.jar to C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionNeoForge.jar
 [Architectury Transformer DEBUG] ============================
 [Architectury Transformer DEBUG] 
 [Architectury Transformer DEBUG] Transforming 5 transformer(s) from C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\devlibs\enchantableshulkerbox-0.1.0-mc1.21-common-dev.jar to C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionNeoForge.jar: 
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@78c8972c
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@573575c
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@4f1c3988
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeAnnotations@8172313
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment@34daa4ca
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformExpectPlatform@685ee0d7
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.RemapInjectables@479b0403
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformPlatformOnly@3ed91138
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeAnnotations@4b5f8eb3
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment@54188757
 [Architectury Transformer DEBUG] Transforming from C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\devlibs\enchantableshulkerbox-0.1.0-mc1.21-common-dev.jar to C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionNeoForge.jar with 5 transformer(s) on dev.architectury.transformer.handler.SimpleTransformerHandler
 [Architectury Transformer DEBUG] Remapping with 1 mapping provider(s):
-[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x000002615be8bd60@5f2702a
-[Architectury Transformer DEBUG] Provided 61 classpath jar(s):
+[Architectury Transformer DEBUG]  - dev.architectury.transformer.transformers.TransformNeoForgeEnvironment$$Lambda/0x000001c38251e8a0@3d1aa255
+[Architectury Transformer DEBUG] Provided 60 classpath jar(s):
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.0.21\618b539767b4899b4660a83006e052b63f1db551\kotlin-stdlib-2.0.21.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\dev.architectury\architectury-injectables\1.0.10\62db2a366d662606d1b23ad02ccc3212ed37ec3\architectury-injectables-1.0.10.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\net.fabricmc\fabric-loader\0.16.9\7eaa23079ac1569963e488054db124c7eb984f05\fabric-loader-0.16.9.jar
@@ -165,11 +161,10 @@
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl\3.3.3\29589b5f87ed335a6c7e7ee6a5775f81f97ecb84\lwjgl-3.3.3.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.lz4\lz4-java\1.8.0\4b986a99445e49ea5fbf5d149c4b63f6ed6c6780\lz4-java-1.8.0.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.9\7cf2726fdcfbc8610f9a71fb3ed639871f315340\slf4j-api-2.0.9.jar
-[Architectury Transformer DEBUG]  - C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\.gradle\loom-cache\minecraftMaven\net\minecraft\minecraft-merged-5efea57e6f\1.21-loom.mappings.1_21.layered+hash.151725720-v2\minecraft-merged-5efea57e6f-1.21-loom.mappings.1_21.layered+hash.151725720-v2.jar
+[Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\fabric-loom\minecraftMaven\net\minecraft\minecraft-merged\1.21-loom.mappings.1_21.layered+hash.151725720-v2\minecraft-merged-1.21-loom.mappings.1_21.layered+hash.151725720-v2.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.97.Final\54188f271e388e7f313aea995e82f58ce2cdb809\netty-transport-native-epoll-4.1.97.Final-linux-x86_64.jar
 [Architectury Transformer DEBUG]  - C:\Users\gummy\.gradle\caches\modules-2\files-2.1\io.netty\netty-transport-native-epoll\4.1.97.Final\5514744c588190ffda076b35a9b8c9f24946a960\netty-transport-native-epoll-4.1.97.Final-linux-aarch_64.jar
-[Architectury Transformer DEBUG]  - C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\.gradle\loom-cache\remapped_mods\loom_mappings_1_21_layered_hash_151725720_v2\dev\architectury\architectury\13.0.2\architectury-13.0.2.jar
-[Architectury Transformer] Read classpath in 1.355 s
+[Architectury Transformer] Read classpath in 1.609 s
 [Architectury Transformer DEBUG] Remapping Classes:
 [Architectury Transformer DEBUG] net/fabricmc/api/EnvType -> net/neoforged/api/distmarker/Dist
 [Architectury Transformer DEBUG] net/fabricmc/api/Environment -> net/neoforged/api/distmarker/OnlyIn
@@ -178,11 +173,8 @@
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/registry/ModEnchantments with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/registry/ModTags with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixinimpl/ItemStackMixinImpl with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/client/CustomRenderType with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/client/CustomRenderType$Companion with maxs=true frames=true
-[Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixin/ShulkerBoxBlockEntityRendererMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixin/ItemMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Writing io/github/cotrin8672/enchantableshulkerbox/mixin/ItemStackMixin with maxs=true frames=true
 [Architectury Transformer DEBUG] Closed File Systems for C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common-transformProductionNeoForge.jar
-[Architectury Transformer] Transformed jar with 5 transformer(s) in 1.542 s
+[Architectury Transformer] Transformed jar with 5 transformer(s) in 1.910 s
 [Architectury Transformer DEBUG] Closed File Systems for C:\Users\gummy\IdeaProjects\ShulkerBoxUtility\common\build\libs\enchantableshulkerbox-0.1.0-mc1.21-common.jar

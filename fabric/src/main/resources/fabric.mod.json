@@ -17,24 +17,13 @@
     "main": [
       {
         "adapter": "kotlin",
-        "value": "io.github.cotrin8672.shulkerboxutility.fabric.ShulkerBoxUtilityFabric"
-      }
-    ],
-    "client": [
-      {
-        "adapter": "kotlin",
-        "value": "io.github.cotrin8672.shulkerboxutility.fabric.client.ShulkerBoxUtilityFabricClient"
-      }
-    ],
-    "modmenu": [
-      {
-        "adapter": "kotlin",
-        "value": "io.github.cotrin8672.shulkerboxutility.fabric.compat.ModMenuIntegration"
+        "value": "io.github.cotrin8672.enchantableshulkerbox.fabric.EnchantableShulkerBoxFabric"
       }
     ]
   },
   "mixins": [
-    "${modId}.mixins.json"
+    "${modId}.mixins.json",
+    "${modId}-common.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabricVersion}",

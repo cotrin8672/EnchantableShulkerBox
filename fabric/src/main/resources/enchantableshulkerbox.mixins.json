@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "io.github.cotrin8672.enchantableshulkerbox.fabric.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "ShulkerBoxBlockEntityRendererMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

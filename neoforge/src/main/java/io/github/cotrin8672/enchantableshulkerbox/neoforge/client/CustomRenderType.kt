@@ -1,4 +1,4 @@
-package io.github.cotrin8672.enchantableshulkerbox.client
+package io.github.cotrin8672.enchantableshulkerbox.neoforge.client
 
 import com.mojang.blaze3d.systems.RenderSystem
 import net.minecraft.client.render.RenderLayer
@@ -41,10 +41,6 @@ class CustomRenderType private constructor(
     pClearState: Runnable,
 ) :
     RenderLayer(pName, pFormat, pMode, pBufferSize, pAffectsCrumbling, pSortOnUpload, pSetupState, pClearState) {
-    init {
-        throw UnsupportedOperationException()
-    }
-
     companion object {
         private val CUSTOM_POLYGON_OFFSET_LAYERING = Layering(
             "polygon_offset_layering", {

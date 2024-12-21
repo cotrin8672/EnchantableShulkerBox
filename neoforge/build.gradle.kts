@@ -17,8 +17,6 @@ architectury {
 }
 
 publisher {
-    val modVersion: String by project
-    val modId: String by project
     val modName: String by project
 
     apiKeys {
@@ -31,7 +29,7 @@ publisher {
 
     versionType.set("release")
     changelog.set(file("../changelog.md"))
-    version.set(modVersion)
+    version.set(project.version.toString())
     displayName.set("${modName}-${project.version}")
     gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.NEOFORGE)
@@ -39,11 +37,11 @@ publisher {
     artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
 
     curseDepends {
-        required("kotlin-for-forge", "cloth-config")
+        required("kotlin-for-forge", "architectury")
     }
 
     modrinthDepends {
-        required("kotlin-for-forge", "cloth-config")
+        required("kotlin-for-forge", "architectury")
     }
 }
 

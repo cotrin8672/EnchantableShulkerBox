@@ -1,5 +1,5 @@
 [versions]
-loom = "1.7.+"
+loom = "1.7-SNAPSHOT"
 architecturyPlugin = "3.4-SNAPSHOT"
 architecturyApi = "13.0.2"
 architecturyRange = "[13.0.2,)"

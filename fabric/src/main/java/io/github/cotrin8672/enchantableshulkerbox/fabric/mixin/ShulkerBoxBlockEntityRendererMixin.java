@@ -1,6 +1,6 @@
-package io.github.cotrin8672.enchantableshulkerbox.mixin;
+package io.github.cotrin8672.enchantableshulkerbox.fabric.mixin;
 
-import io.github.cotrin8672.enchantableshulkerbox.client.CustomRenderType;
+import io.github.cotrin8672.enchantableshulkerbox.fabric.client.CustomRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.block.entity.ShulkerBoxBlockEntity;
