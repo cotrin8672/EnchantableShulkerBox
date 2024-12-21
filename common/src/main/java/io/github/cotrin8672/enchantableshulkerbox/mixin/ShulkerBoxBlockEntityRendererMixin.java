@@ -12,6 +12,8 @@ import net.minecraft.client.render.VertexConsumers;
 import net.minecraft.client.render.block.entity.ShulkerBoxBlockEntityRenderer;
 import net.minecraft.client.render.entity.model.ShulkerEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.util.math.Direction;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -39,6 +41,10 @@ public class ShulkerBoxBlockEntityRendererMixin {
             int j,
             CallbackInfo ci
     ) {
+        ItemEnchantmentsComponent enchantmentsComponent =
+                shulkerBoxBlockEntity.getComponents().get(DataComponentTypes.ENCHANTMENTS);
+        if (enchantmentsComponent == null) return;
+
         Direction direction = Direction.UP;
         if (shulkerBoxBlockEntity.hasWorld()) {
             BlockState blockState = shulkerBoxBlockEntity.getWorld().getBlockState(shulkerBoxBlockEntity.getPos());

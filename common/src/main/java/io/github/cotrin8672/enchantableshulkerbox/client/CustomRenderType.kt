@@ -62,8 +62,6 @@ class CustomRenderType private constructor(
             VertexFormats.POSITION_TEXTURE,
             VertexFormat.DrawMode.QUADS,
             1536,
-            false,
-            false,
             MultiPhaseParameters.builder()
                 .program(GLINT_PROGRAM)
                 .texture(Texture(ItemRenderer.ITEM_ENCHANTMENT_GLINT, true, false))

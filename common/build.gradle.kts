@@ -25,6 +25,7 @@ dependencies {
     })
 
     modImplementation(libs.fabric.loader)
+    modImplementation(libs.architectury)
 }
 
 java {
