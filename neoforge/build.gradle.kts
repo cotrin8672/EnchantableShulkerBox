@@ -16,7 +16,16 @@ architectury {
     neoForge()
 }
 
+base {
+    val modId: String by project
+    val modVersion: String by project
+
+    archivesName = modId
+    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
+}
+
 publisher {
+    val modId: String by project
     val modName: String by project
 
     apiKeys {
@@ -34,7 +43,7 @@ publisher {
     gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.NEOFORGE)
     setCurseEnvironment(CurseEnvironment.BOTH)
-    artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
+    artifact.set("build/libs/$modId-${project.version}.jar")
 
     curseDepends {
         required("kotlin-for-forge")
@@ -43,14 +52,6 @@ publisher {
     modrinthDepends {
         required("kotlin-for-forge")
     }
-}
-
-base {
-    val modId: String by project
-    val modVersion: String by project
-
-    archivesName = modId
-    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
 }
 
 configurations {
