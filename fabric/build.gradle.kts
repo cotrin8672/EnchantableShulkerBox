@@ -32,7 +32,7 @@ publisher {
     versionType.set("release")
     changelog.set(file("../changelog.md"))
     version.set(modVersion)
-    displayName.set("ShulkerBoxUtility-${project.version}")
+    displayName.set("${modName}-${project.version}")
     gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.FABRIC)
     setCurseEnvironment(CurseEnvironment.BOTH)
