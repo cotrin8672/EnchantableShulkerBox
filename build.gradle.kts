@@ -22,4 +22,9 @@ java {
 allprojects {
     group = modGroupId
     version = modVersion
+
+    repositories {
+        maven("https://maven.shedaniel.me/")
+        maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
+    }
 }

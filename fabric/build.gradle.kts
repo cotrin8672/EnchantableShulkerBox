@@ -2,7 +2,6 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import com.hypherionmc.modpublisher.properties.CurseEnvironment
 import com.hypherionmc.modpublisher.properties.ModLoader
 import net.fabricmc.loom.task.RemapJarTask
-import kotlin.Suppress
 
 plugins {
     alias(libs.plugins.loom)
@@ -18,8 +17,6 @@ architectury {
 }
 
 publisher {
-    val modVersion: String by project
-    val modId: String by project
     val modName: String by project
 
     apiKeys {
@@ -27,18 +24,17 @@ publisher {
         modrinth(System.getenv("MODRINTH_API_KEY"))
     }
 
-    // TODO: set project id
-    curseID.set("")
-    modrinthID.set("")
+    curseID.set("1163015")
+    modrinthID.set("FrMKw3Rd")
 
     versionType.set("release")
     changelog.set(file("../changelog.md"))
-    version.set(modVersion)
-    displayName.set("$modName-${project.name}-$modVersion")
-    gameVersions.set(listOf(libs.versions.minecraft.get()))
+    version.set(project.version.toString())
+    displayName.set("${modName}-${project.version}")
+    gameVersions.set(listOf("1.21", "1.21.1"))
     setLoaders(ModLoader.FABRIC)
     setCurseEnvironment(CurseEnvironment.BOTH)
-    artifact.set("build/libs/$modId-${project.name}-$modVersion.jar")
+    artifact.set("build/libs/${base.archivesName}-${project.version}.jar")
 
     curseDepends {
         required("fabric-api", "fabric-language-kotlin")
@@ -51,8 +47,10 @@ publisher {
 
 base {
     val modId: String by project
+    val modVersion: String by project
 
-    archivesName = "$modId-${project.name}"
+    archivesName = modId
+    version = "${modVersion}-mc${libs.versions.minecraft.get()}-${project.name}"
 }
 
 configurations {
@@ -78,8 +76,13 @@ configurations {
     }
 }
 
+repositories {
+    maven("https://maven.terraformersmc.com/")
+    maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
+}
+
 @Suppress("UnstableApiUsage")
-        dependencies {
+dependencies {
     minecraft(libs.minecraft)
     mappings(loom.layered {
         mappings("net.fabricmc:yarn:${libs.versions.yarnFabric.get()}")
@@ -103,15 +106,15 @@ tasks.withType<ProcessResources>().configureEach {
     val modDescription: String by project
 
     val replaceProperties = mapOf(
-            "minecraftVersion" to libs.versions.minecraft.get(),
-            "fabricVersion" to libs.versions.fabricLoader.get(),
-            "architecturyVersion" to libs.versions.architecturyApi.get(),
-            "modId" to modId,
-            "modName" to modName,
-            "modLicense" to modLicense,
-            "modVersion" to modVersion,
-            "modAuthors" to modAuthors,
-            "modDescription" to modDescription,
+        "minecraftVersion" to libs.versions.minecraft.get(),
+        "fabricVersion" to libs.versions.fabricLoader.get(),
+        "architecturyVersion" to libs.versions.architecturyApi.get(),
+        "modId" to modId,
+        "modName" to modName,
+        "modLicense" to modLicense,
+        "modVersion" to modVersion,
+        "modAuthors" to modAuthors,
+        "modDescription" to modDescription,
     )
     inputs.properties(replaceProperties)
 

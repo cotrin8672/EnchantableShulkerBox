@@ -17,24 +17,18 @@
     "main": [
       {
         "adapter": "kotlin",
-        "value": "io.github.cotrin8672.fabric.TemplateModFabric"
-      }
-    ],
-    "client": [
-      {
-        "adapter": "kotlin",
-        "value": "io.github.cotrin8672.fabric.client.TemplateModFabricClient"
+        "value": "io.github.cotrin8672.enchantableshulkerbox.fabric.EnchantableShulkerBoxFabric"
       }
     ]
   },
   "mixins": [
-    "${modId}.mixins.json"
+    "${modId}.mixins.json",
+    "${modId}-common.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabricVersion}",
     "minecraft": "~${minecraftVersion}",
     "java": ">=21",
-    "architectury": ">=${architecturyVersion}",
     "fabric-api": "*"
   },
   "suggests": {
