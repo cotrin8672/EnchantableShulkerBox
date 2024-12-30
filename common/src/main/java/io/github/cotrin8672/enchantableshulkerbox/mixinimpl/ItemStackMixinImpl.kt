@@ -15,21 +15,18 @@ object ItemStackMixinImpl {
     fun decrementUnlessCreative(
         stack: ItemStack,
         amount: Int,
-        entity: LivingEntity,
+        player: PlayerEntity,
         ci: CallbackInfo,
     ) {
-        if (entity !is PlayerEntity) return
-        if (entity.isSpectator || entity.isCreative) return
-        val enchantedShulkerList = entity.inventory.main.filter {
+        val enchantedShulkerList = player.inventory.main.filter {
             it.isIn(ModTags.SHULKER_BOXES) &&
                     it.enchantments.getLevel(
-                        entity.world.registryManager.createRegistryLookup().getOptionalEntry(
+                        player.world.registryManager.createRegistryLookup().getOptionalEntry(
                             ModEnchantments.REFILL.registryRef,
                             ModEnchantments.REFILL
                         ).get()
                     ) > 0
         }
-        if (enchantedShulkerList.isEmpty()) return
 
         for (shulker in enchantedShulkerList) {
             val shulkerInventory = shulker.get(DataComponentTypes.CONTAINER) ?: continue
